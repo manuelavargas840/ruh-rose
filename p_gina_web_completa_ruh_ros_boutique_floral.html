@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruh Rosé | Rosas Eternas de Diseño & Boutique Floral</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        .font-serif-luxury { font-family: 'Cormorant Garamond', serif; }
+        .font-sans-clean { font-family: 'Montserrat', sans-serif; }
+
+        html { scroll-behavior: smooth; }
+        
+        /* Efecto sutil de animación hover */
+        .img-zoom {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-hover:hover .img-zoom {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-stone-800 font-sans-clean antialiased selection:bg-rose-900 selection:text-white">
+
+    <!-- BARRA SUPERIOR PROMOCIONAL -->
+    <div class="bg-stone-900 text-rose-100 text-[11px] py-2 px-4 text-center tracking-widest font-light">
+        ✨ ENVÍOS SEGUROS A TODO EL PAÍS — EDICIONES LIMITADAS HECHAS A MANO ✨
+    </div>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="bg-[#FDFBF7]/90 backdrop-blur-md border-b border-stone-200/60 sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- LOGO INTEGRADO RUH ROSÉ -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-full bg-rose-950 text-rose-100 flex flex-col items-center justify-center font-serif-luxury font-bold text-xl leading-none shadow-md border border-rose-800 group-hover:bg-rose-900 transition">
+                    <span>R</span>
+                    <span class="text-[9px] tracking-tighter text-rose-300">R</span>
+                </div>
+                <div>
+                    <h1 class="font-serif-luxury font-semibold text-2xl tracking-widest text-stone-900 leading-none">RUH ROSÉ</h1>
+                    <p class="text-[8px] tracking-[0.25em] text-rose-900 uppercase font-medium mt-0.5">Eternity Floral Design</p>
+                </div>
+            </a>
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-medium tracking-wider text-stone-600 uppercase">
+                <a href="#coleccion" class="hover:text-rose-900 transition">Colección</a>
+                <a href="#por-que-nosotros" class="hover:text-rose-900 transition">¿Por qué Elegirnos?</a>
+                <a href="#experiencia" class="hover:text-rose-900 transition">Garantía Ruh</a>
+                <a href="#preguntas" class="hover:text-rose-900 transition">FAQ</a>
+            </nav>
+
+            <!-- BOTÓN DIRECTO A WHATSAPP -->
+            <div>
+                <a href="https://wa.me/573000000000?text=Hola%20Ruh%20Ros%C3%A9,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20arreglos%20florales." 
+                   target="_blank" 
+                   class="inline-flex items-center space-x-2 bg-rose-950 hover:bg-rose-900 text-white text-xs px-5 py-2.5 rounded-full font-medium tracking-wide shadow-md hover:shadow-lg transition">
+                    <i class="fa-brands fa-whatsapp text-sm text-green-400"></i>
+                    <span>Pedir por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (PORTADA PRINCIPAL) -->
+    <section class="relative py-16 md:py-24 px-6 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center space-x-2 bg-rose-100/80 border border-rose-200 text-rose-950 text-xs px-3 py-1.5 rounded-full font-medium">
+                    <span class="w-2 h-2 rounded-full bg-rose-800 animate-pulse"></span>
+                    <span>Flores Eternas de Tacto Natural</span>
+                </div>
+                
+                <h2 class="font-serif-luxury text-4xl sm:text-5xl md:text-6xl text-stone-900 font-semibold leading-[1.15]">
+                    Detalles que desafían <br><span class="italic font-normal text-rose-900">el paso del tiempo.</span>
+                </h2>
+                
+                <p class="text-stone-600 text-sm md:text-base font-light max-w-lg leading-relaxed mx-auto md:mx-0">
+                    En <strong class="font-medium text-stone-800">Ruh Rosé</strong> inmortalizamos momentos especiales a través de arreglos florales artesanales en rosa de seda de alta gama. La sofisticación de una rosa fresca con la belleza que jamás se marchita.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
+                    <a href="#coleccion" class="w-full sm:w-auto text-center bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold px-8 py-3.5 rounded-full shadow-lg transition tracking-wider uppercase">
+                        Explorar Catálogo
+                    </a>
+                    <a href="#por-que-nosotros" class="w-full sm:w-auto text-center bg-transparent border border-stone-300 hover:border-stone-800 text-stone-800 text-xs font-medium px-6 py-3.5 rounded-full transition tracking-wider uppercase">
+                        Conocer Más
+                    </a>
+                </div>
+
+                <!-- Garantías Rápidas -->
+                <div class="pt-6 border-t border-stone-200/80 grid grid-cols-3 gap-2 text-stone-500 text-[11px]">
+                    <div>
+                        <i class="fa-solid fa-sparkles text-rose-800 mb-1 block"></i>
+                        <span>Acabado Ultra Real</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gift text-rose-800 mb-1 block"></i>
+                        <span>Empaque Premium</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-heart text-rose-800 mb-1 block"></i>
+                        <span>Durabilidad Infinita</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGEN DE REFERENCIA DEL HERO -->
+            <div class="relative">
+                <div class="w-full h-[420px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl relative border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&w=900&q=80" 
+                         alt="Rosas Rojas Premium Ruh Rosé" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                    
+                    <div class="absolute bottom-6 left-6 right-6 text-white p-4 rounded-xl backdrop-blur-md bg-white/10 border border-white/20">
+                        <p class="font-serif-luxury text-xl font-semibold">Colección Ruh Imperial</p>
+                        <p class="text-xs text-rose-200">Elaboradas pétalo a pétalo con fibras satinadas de textura orgánica.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROPUESTA DE VALOR / BENEFICIOS -->
+    <section id="por-que-nosotros" class="bg-rose-950 text-rose-50 py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <span class="text-rose-300 text-xs uppercase tracking-widest font-semibold">La Diferencia Ruh Rosé</span>
+                <h3 class="font-serif-luxury text-3xl md:text-4xl font-semibold">¿Por qué regalar nuestras rosas eternas?</h3>
+                <div class="w-12 h-0.5 bg-rose-400 mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 border border-white/10 p-8 rounded-xl text-center space-y-3 hover:bg-white/10 transition">
+                    <div class="w-12 h-12 bg-rose-900/60 rounded-full flex items-center justify-center mx-auto text-rose-200 text-xl">
+                        <i class="fa-solid fa-hourglass-start"></i>
+                    </div>
+                    <h4 class="font-serif-luxury text-xl font-semibold">Eternas & Sin Mantenimiento</h4>
+                    <p class="text-xs text-rose-200/80 leading-relaxed">No requieren agua ni luz solar. Mantienen su esplendor, forma y color perfecto intactos año tras año.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-xl text-center space-y-3 hover:bg-white/10 transition">
+                    <div class="w-12 h-12 bg-rose-900/60 rounded-full flex items-center justify-center mx-auto text-rose-200 text-xl">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h4 class="font-serif-luxury text-xl font-semibold">Presentación de Lujo</h4>
+                    <p class="text-xs text-rose-200/80 leading-relaxed">Entregadas en cajas rígidas tipo sombrerera, acabados satinados y tarjetas personalizadas impresas con elegancia.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-8 rounded-xl text-center space-y-3 hover:bg-white/10 transition">
+                    <div class="w-12 h-12 bg-rose-900/60 rounded-full flex items-center justify-center mx-auto text-rose-200 text-xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4 class="font-serif-luxury text-xl font-semibold">Textura & Aroma Exclusivo</h4>
+                    <p class="text-xs text-rose-200/80 leading-relaxed">Nuestros materiales imitan la suavidad de los pétalos frescos e impregnamos un aroma sutil a rosas de alta perfumería.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CATÁLOGO / PRODUCTOS (Orientado a Estratos 3, 4 y 5) -->
+    <section id="coleccion" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-rose-900 text-xs uppercase tracking-widest font-semibold">Catálogo Exclusivo</span>
+            <h3 class="font-serif-luxury text-4xl text-stone-900 font-semibold">Nuestra Colección de Firma</h3>
+            <p class="text-stone-500 text-xs md:text-sm">Selecciona tu arreglo favorito y personaliza los colores de rosas y tarjeta de dedicatoria.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- PRODUCTO 1: FLOWERBOX VELVET -->
+            <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+                <div>
+                    <!-- Imagen de Referencia Realista -->
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80" 
+                             alt="Caja Sombrerera Ruh Velvet" 
+                             class="w-full h-full object-cover img-zoom">
+                        <span class="absolute top-4 left-4 bg-stone-900/80 backdrop-blur-md text-white text-[10px] uppercase px-3 py-1 rounded-full tracking-wider">Top Seller</span>
+                    </div>
+
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-serif-luxury text-2xl font-semibold text-stone-900">Flowerbox Ruh Velvet</h4>
+                                <p class="text-[11px] text-stone-400 uppercase tracking-wider">Caja Sombrerera Rígida + 12 Rosas</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Arreglo floral simétrico montado en cofre cilíndrico de cartón rígido mate con sello dorado y lazo de seda. Ideal para aniversarios e hitos especiales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-6 pt-0 space-y-4">
+                    <div class="flex justify-between items-center border-t border-stone-100 pt-4">
+                        <div>
+                            <span class="text-[10px] text-stone-400 block uppercase">Precio Comercial</span>
+                            <span class="font-bold text-stone-900 text-lg">$129.000 COP</span>
+                        </div>
+                        <span class="text-xs text-rose-800 bg-rose-50 px-2.5 py-1 rounded border border-rose-100 font-medium">Incluye Tarjeta</span>
+                    </div>
+
+                    <a href="https://wa.me/573000000000?text=Hola!%20Me%20interesa%20pedir%20la%20Flowerbox%20Ruh%20Velvet" 
+                       target="_blank" 
+                       class="block text-center w-full bg-rose-950 hover:bg-rose-900 text-white text-xs font-semibold py-3 rounded-xl transition shadow-sm">
+                        Ordenar este Diseño
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2: CÚPULA ENCANTADA LED -->
+            <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+                <div>
+                    <!-- Imagen de Referencia Realista -->
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
+                             alt="Cúpula de Cristal LED Ruh Rosé" 
+                             class="w-full h-full object-cover img-zoom">
+                        <span class="absolute top-4 left-4 bg-rose-900/90 backdrop-blur-md text-white text-[10px] uppercase px-3 py-1 rounded-full tracking-wider">Favorito Regalo</span>
+                    </div>
+
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-serif-luxury text-2xl font-semibold text-stone-900">Cúpula Encantada LED</h4>
+                                <p class="text-[11px] text-stone-400 uppercase tracking-wider">Cristal + Rosa Terciopelo + Luces</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Cúpula de cristal transparente sobre base de madera tratada. Protege una rosa roja de terciopelo rodeada por una microguirnalda de luces cálidas a batería.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-6 pt-0 space-y-4">
+                    <div class="flex justify-between items-center border-t border-stone-100 pt-4">
+                        <div>
+                            <span class="text-[10px] text-stone-400 block uppercase">Precio Comercial</span>
+                            <span class="font-bold text-stone-900 text-lg">$98.000 COP</span>
+                        </div>
+                        <span class="text-xs text-rose-800 bg-rose-50 px-2.5 py-1 rounded border border-rose-100 font-medium">Baterías Incluidas</span>
+                    </div>
+
+                    <a href="https://wa.me/573000000000?text=Hola!%20Me%20interesa%20pedir%20la%20C%C3%BApula%20Encantada%20LED" 
+                       target="_blank" 
+                       class="block text-center w-full bg-rose-950 hover:bg-rose-900 text-white text-xs font-semibold py-3 rounded-xl transition shadow-sm">
+                        Ordenar este Diseño
+                    </a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 3: RAMO IMPERIAL COREANO -->
+            <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm card-hover flex flex-col justify-between">
+                <div>
+                    <!-- Imagen de Referencia Realista -->
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80" 
+                             alt="Ramo Imperial Korean Style" 
+                             class="w-full h-full object-cover img-zoom">
+                        <span class="absolute top-4 left-4 bg-amber-800/90 backdrop-blur-md text-white text-[10px] uppercase px-3 py-1 rounded-full tracking-wider">Tendencia Socials</span>
+                    </div>
+
+                    <div class="p-6 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="font-serif-luxury text-2xl font-semibold text-stone-900">Ramo Imperial Coreano</h4>
+                                <p class="text-[11px] text-stone-400 uppercase tracking-wider">Envoltorio Plisado + Perlas & Cinta</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Espectacular ramo multicapa al estilo floral coreano. Envuelto en papel de seda impermeabilizado con acabado translúcido y corona decorativa opcional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-6 pt-0 space-y-4">
+                    <div class="flex justify-between items-center border-t border-stone-100 pt-4">
+                        <div>
+                            <span class="text-[10px] text-stone-400 block uppercase">Precio Comercial</span>
+                            <span class="font-bold text-stone-900 text-lg">$149.000 COP</span>
+                        </div>
+                        <span class="text-xs text-rose-800 bg-rose-50 px-2.5 py-1 rounded border border-rose-100 font-medium">Tamaño XL</span>
+                    </div>
+
+                    <a href="https://wa.me/573000000000?text=Hola!%20Me%20interesa%20pedir%20el%20Ramo%20Imperial%20Coreano" 
+                       target="_blank" 
+                       class="block text-center w-full bg-rose-950 hover:bg-rose-900 text-white text-xs font-semibold py-3 rounded-xl transition shadow-sm">
+                        Ordenar este Diseño
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA DE COMPRA Y GARANTÍA -->
+    <section id="experiencia" class="bg-stone-100 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <span class="text-rose-900 text-xs font-semibold uppercase tracking-widest">Envíos Cuidados al Detalle</span>
+                <h3 class="font-serif-luxury text-3xl md:text-4xl font-semibold text-stone-900">Protección garantizada en cada entrega</h3>
+                <p class="text-stone-600 text-xs md:text-sm leading-relaxed">
+                    Sabemos que estás entregando un sentimiento. Por eso, cada uno de nuestros arreglos viaja en cajas rígidas acolchadas con protección antichoque, asegurando que llegue exactamente tan perfecto como salió de nuestro taller boutique.
+                </p>
+                <div class="pt-2 space-y-2 text-xs text-stone-700">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-check text-rose-900"></i>
+                        <span>Empaque protector especial contra impactos.</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-check text-rose-900"></i>
+                        <span>Mensaje personalizado en sobre sellado.</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-check text-rose-900"></i>
+                        <span>Seguimiento de envío en tiempo real vía WhatsApp.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGEN PROCESO / UNBOXING -->
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" 
+                     alt="Empaque de regalo Ruh Rosé" 
+                     class="w-full h-80 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section id="preguntas" class="py-20 px-6 max-w-4xl mx-auto space-y-8">
+        <div class="text-center space-y-2">
+            <h3 class="font-serif-luxury text-3xl font-semibold">Preguntas Frecuentes</h3>
+            <p class="text-xs text-stone-500">Resuelve tus dudas antes de realizar tu pedido.</p>
+        </div>
+
+        <div class="space-y-4 text-xs md:text-sm">
+            <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm space-y-1">
+                <p class="font-semibold text-stone-900">¿De qué material están hechas las rosas?</p>
+                <p class="text-stone-600">Utilizamos fibras de seda tratadas y terciopelo sintético de primera calidad que emulan al 100% el tacto, color y flexibilidad de los pétalos naturales.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm space-y-1">
+                <p class="font-semibold text-stone-900">¿Con cuánta anticipación debo hacer mi pedido?</p>
+                <p class="text-stone-600">Recomendamos realizar tu pedido con 2 a 3 días de anticipación para entregas locales y 4 días para envíos nacionales.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-stone-200 shadow-sm space-y-1">
+                <p class="font-semibold text-stone-900">¿Puedo personalizar los colores y el mensaje?</p>
+                <p class="text-stone-600">¡Absolutamente! Puedes elegir el color de las rosas (rojas, rosa palo, champagne, blancas) y enviarnos tu dedicatoria para imprimirla en la tarjeta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER FINAL -->
+    <footer class="bg-stone-900 text-stone-400 text-xs py-12 px-6 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-rose-950 text-rose-100 flex flex-col items-center justify-center font-serif-luxury font-bold text-base leading-none border border-rose-800">
+                    <span>R</span>
+                    <span class="text-[7px] text-rose-300">R</span>
+                </div>
+                <div>
+                    <p class="font-serif-luxury font-semibold text-lg text-white tracking-widest leading-none">RUH ROSÉ</p>
+                    <p class="text-[9px] tracking-widest text-stone-500 uppercase">Eternity Floral Design</p>
+                </div>
+            </div>
+
+            <p class="text-stone-500 text-[11px]">
+                © 2026 Ruh Rosé. Todos los derechos reservados. Rosas eternas de diseño exclusivo.
+            </p>
+
+            <div class="flex space-x-4 text-base text-stone-300">
+                <a href="#" class="hover:text-rose-300 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-rose-300 transition" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="hover:text-rose-300 transition" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-rose-300 transition" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
